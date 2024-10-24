@@ -9,55 +9,76 @@ public class Starcraft {
 	
 	public static void main(String[] args) {
 	
-//	while(true) {
-//		zealoHit(Marine.attack);
-//		zealoHit(Marine.attack);
-//		zealoHit(Marine.attack);
-//		
-//		marineHit(zealot.attack);
-//		
-//		showLog();
-//		if(m1.hp<0) {		
-//		}
-//		else if(m2.hp<0) {
-//		}
-//		else if(m3.hp<0||zealot.hp<0) {
-//			break;
-//		}
-//	}
-	showLog();
-	
-	zealoHit(Marine.attack);
-	zealoHit(Marine.attack);
-	zealoHit(Marine.attack);
-	
-	marineHit(zealot.attack);
-	
-	showLog();
-	
-	zealoHit(Marine.attack);
-	zealoHit(Marine.attack);
-	zealoHit(Marine.attack);
-	
-	marineHit(zealot.attack);
-	
-	showLog();
-	
-	zealoHit(Marine.attack);
-	zealoHit(Marine.attack);
-	zealoHit(Marine.attack);
-	
-	marineHit(zealot.attack);
-	
-	showLog();
-	
-	zealoHit(Marine.attack);
-	zealoHit(Marine.attack);
-	zealoHit(Marine.attack);
-	
-	marineHit(zealot.attack);
-	
-	showLog();
+	while(true) {
+		zealoHit(Marine.attack);
+		zealoHit(Marine.attack);
+		zealoHit(Marine.attack);
+		
+		marineHit(zealot.attack);
+		
+		showLog();
+		if(m1.hp<0) {	
+			zealoHit(Marine.attack);
+			zealoHit(Marine.attack);
+			zealoHit(Marine.attack);
+			
+			marineHit(zealot.attack);
+			
+			showLog();
+		}
+		else if(m2.hp<0) {
+			zealoHit(Marine.attack);
+			zealoHit(Marine.attack);
+			zealoHit(Marine.attack);
+			
+			marineHit(zealot.attack);
+			
+			showLog();
+		}
+		else if(m3.hp<0||zealot.hp<0) {
+			zealoHit(Marine.attack);
+			zealoHit(Marine.attack);
+			zealoHit(Marine.attack);
+			
+			marineHit(zealot.attack);
+			
+			showLog();
+			break;
+		}
+	}
+//	showLog();
+//	
+//	zealoHit(Marine.attack);
+//	zealoHit(Marine.attack);
+//	zealoHit(Marine.attack);
+//	
+//	marineHit(zealot.attack);
+//	
+//	showLog();
+//	
+//	zealoHit(Marine.attack);
+//	zealoHit(Marine.attack);
+//	zealoHit(Marine.attack);
+//	
+//	marineHit(zealot.attack);
+//	
+//	showLog();
+//	
+//	zealoHit(Marine.attack);
+//	zealoHit(Marine.attack);
+//	zealoHit(Marine.attack);
+//	
+//	marineHit(zealot.attack);
+//	
+//	showLog();
+//	
+//	zealoHit(Marine.attack);
+//	zealoHit(Marine.attack);
+//	zealoHit(Marine.attack);
+//	
+//	marineHit(zealot.attack);
+//	
+//	showLog();
 	
 //	marineHit//마린떄리기
 //	remainHp//남은체력
@@ -81,8 +102,6 @@ public class Starcraft {
 		int remainHp=m.hp-damage;
 		if(remainHp<0) {
 			m.hp=0;
-
-			
 			
 		}
 		else {
@@ -101,7 +120,7 @@ public class Starcraft {
 			int remainShield=zealot.Shield-damage;
 			if(remainShield<0) {
 				zealot.hp+=remainShield;
-				zealot.kill++;
+			
 			}
 			else {
 				zealot.Shield=remainShield;
