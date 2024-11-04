@@ -80,7 +80,8 @@ public class Student implements Cloneable, Serializable{
 	}
 	
 	public String toString() {
-		return String.format("%4d %4s %6d %7d %7d %7d %7.2f", no, name, kor, eng, mat, total(), avg());
+		return String.format("%4d %4s %6d %7d %7d %7d %7.2f",
+				no, name, kor, eng, mat, total(), avg());
 	}
 	
 	public int total() {

@@ -13,8 +13,7 @@ public class Service {
 		int eng = utils.nextInt("영어점수");
 		int mat = utils.nextInt("수학점수");
 
-//		for (int i = 0; i < students.length; i++) {
-//			students[i] = new Student();
+
 		Student tmp = new Student();
 
 		tmp.no = no;
@@ -30,11 +29,12 @@ public class Service {
 	}
 
 	// 조회
-	public void list() {
-		for (int i = 0; i < students.length; i++) {
-			System.out.println(students[i]);
+	 void list() {
+       for (int i = 0; i < cnt; i++) {
+           System.out.println(students[i].no + " " + students[i].name + " " + students[i].kor + " " + students[i].eng
+                   + " " + students[i].mat + " " + students[i].sum() + " " + students[i].avg() + " ");
 
-		}
-	}
+       }
+   }
 
 }
