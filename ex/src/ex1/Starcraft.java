@@ -91,7 +91,7 @@ public class Starcraft {
 		for(int i=0; i<marines.length;i++) { //마린의 길이만큼 반복			
 			if(marines[i] != null) { //마린 i가 널이 아니면
 				m = marines[i]; //마린i가 m이되고
-				break; //멈추면서 빠져나간다
+				break; 
 				
 			}
 		}
